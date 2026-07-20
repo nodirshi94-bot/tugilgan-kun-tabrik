@@ -1,133 +1,33 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dilmurodjon — Tug'ilgan kuningiz bilan!</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tug'ilgan kun tabrigi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="sky-scene" aria-hidden="true">
-    <div class="sky-scene__sky"></div>
 
-    <svg class="sky-scene__rainbow" viewBox="0 0 600 300" preserveAspectRatio="xMidYMin meet">
-      <defs>
-        <linearGradient id="rainbow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%"   stop-color="#ff6b6b" stop-opacity="0.35"/>
-          <stop offset="20%"  stop-color="#ffd93d" stop-opacity="0.35"/>
-          <stop offset="40%"  stop-color="#6bcb77" stop-opacity="0.35"/>
-          <stop offset="60%"  stop-color="#4d96ff" stop-opacity="0.35"/>
-          <stop offset="80%"  stop-color="#9b59b6" stop-opacity="0.35"/>
-          <stop offset="100%" stop-color="#e879a0" stop-opacity="0.35"/>
-        </linearGradient>
-      </defs>
-      <path d="M 30 280 A 270 270 0 0 1 570 280" fill="none" stroke="url(#rainbow-grad)" stroke-width="14" stroke-linecap="round"/>
-      <path d="M 60 280 A 240 240 0 0 1 540 280" fill="none" stroke="url(#rainbow-grad)" stroke-width="10" stroke-linecap="round" opacity="0.5"/>
-    </svg>
+    <div class="container">
+        <button id="music-btn">Musiqa</button>
+        
+        <h1>Tug'ilgan kuningiz bilan!</h1>
+        <p>Aziz Dilmurodjon! Bugun sizning maxsus kuningiz! Yangi yoshingiz sizga baxt-saodat, omad va barcha orzularingiz amalga oshishini tilaymiz.</p>
+        
+        <ul>
+            <li>✨ Omasingiz doimo yor bo'lsin</li>
+            <li>💪 Sog'lik va quvvat hech qachon tark etmasin</li>
+            <li>🌟 Orzu va maqsadlaringiz ro'yobga chiqsin</li>
+            <li>❤️ Hayotingiz sevgi va baxtga to'la bo'lsin</li>
+        </ul>
 
-    <div class="sky-scene__airplane">
-      <svg viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M2 12 L18 12 L22 8 L28 8 L32 12 L46 12 L40 14 L32 14 L28 18 L22 18 L18 14 L2 14 Z" fill="rgba(200,210,230,0.85)"/>
-        <path d="M22 8 L26 4 L28 8 Z" fill="rgba(200,210,230,0.6)"/>
-        <circle cx="38" cy="13" r="1.5" fill="rgba(232,197,71,0.9)"/>
-      </svg>
-    </div>
-
-    <div class="sky-scene__helicopter">
-      <svg viewBox="0 0 56 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <ellipse class="helicopter__rotor" cx="28" cy="6" rx="24" ry="2" fill="rgba(180,190,210,0.5)"/>
-        <rect x="26" y="4" width="4" height="8" rx="1" fill="rgba(160,170,190,0.7)"/>
-        <path d="M14 14 Q28 10 42 14 L40 22 Q28 18 16 22 Z" fill="rgba(200,210,230,0.8)"/>
-        <rect x="24" y="12" width="8" height="6" rx="2" fill="rgba(180,190,210,0.9)"/>
-        <path d="M8 20 L14 18 L14 24 L8 22 Z" fill="rgba(200,210,230,0.6)"/>
-        <path d="M48 20 L42 18 L42 24 L48 22 Z" fill="rgba(200,210,230,0.6)"/>
-        <circle cx="28" cy="15" r="2" fill="rgba(100,120,150,0.8)"/>
-      </svg>
-    </div>
-  </div>
-
-  <div class="bg-glow bg-glow--1"></div>
-  <div class="bg-glow bg-glow--2"></div>
-  <div class="particles" aria-hidden="true">
-    <span></span><span></span><span></span><span></span><span></span>
-    <span></span><span></span><span></span><span></span><span></span>
-  </div>
-
-  <button class="music-btn" id="music-btn" type="button" aria-label="Musiqani yoqish">
-    <span class="music-btn__icon music-btn__icon--play">🎵</span>
-    <span class="music-btn__icon music-btn__icon--pause" hidden>🔇</span>
-    <span class="music-btn__label">Musiqa</span>
-  </button>
-
-  <main class="page">
-    <section class="greeting">
-      <div class="greeting__badge">🎂</div>
-      <p class="greeting__name">Aziz Dilmurodjon!</p>
-      <h1 class="greeting__title">Tug'ilgan kuningiz bilan!</h1>
-      <p class="greeting__subtitle">
-        Bugun sizning maxsus kuningiz! Yangi yoshingiz sizga baxt-saodat,
-        omad, sog'lik va barcha orzularingiz amalga oshishini tilaymiz.
-        Hayotingiz har kuni quvonch, muvaffaqiyat va yorqin lahzalar bilan to'la bo'lsin.
-      </p>
-      <ul class="greeting__wishes">
-        <li>✨ Omadingiz doimo yor bo'lsin</li>
-        <li>💪 Sog'lik va quvvat hech qachon tark etmasin</li>
-        <li>🌟 Orzu va maqsadlaringiz ro'yobga chiqsin</li>
-        <li>❤️ Hayotingiz sevgi va baxtga to'la bo'lsin</li>
-      </ul>
-      <p class="greeting__from">Eng samimiy tabriklar bilan 🎉</p>
-    </section>
-
-    <section class="video-section">
-      <h2 class="video-section__heading">Dilmurodjon uchun tabrik video</h2>
-      <div class="video-card">
-        <video
-          class="video-card__player"
-          controls
-          playsinline
-          preload="metadata"
-          src="tabrik.mp4"
-        >
-          Brauzeringiz video formatini qo'llab-quvvatlamaydi.
+        <h2>Dilmurodjon uchun tabrik video</h2>
+        <video class="video-card_player" controls playsinline preload="metadata">
+            <source src="tabrik.mp4" type="video/mp4">
+            Brauzeringiz video formatini qo'llab-quvvatlamaydi.
         </video>
-        <p class="video-card__hint video-card__hint--error" id="video-error" hidden>
-          Video yuklanmadi. Fayl <code>video/tabrik.mp4</code> mavjudligini tekshiring
-          yoki sahifani lokal server orqali oching.
-        </p>
-      </div>
-    </section>
-  </main>
-  <script src="music.js"></script>
-  <script>
-    const video = document.querySelector(".video-card__player");
-    const errorHint = document.getElementById("video-error");
-    const musicBtn = document.getElementById("music-btn");
-    const playIcon = musicBtn.querySelector(".music-btn__icon--play");
-    const pauseIcon = musicBtn.querySelector(".music-btn__icon--pause");
-    const musicLabel = musicBtn.querySelector(".music-btn__label");
+    </div>
 
-    video.addEventListener("error", () => {
-      errorHint.hidden = false;
-    });
-
-    musicBtn.addEventListener("click", () => {
-      if (window.birthdayMusic.isPlaying()) {
-        window.birthdayMusic.stop();
-        playIcon.hidden = false;
-        pauseIcon.hidden = true;
-        musicLabel.textContent = "Musiqa";
-        musicBtn.classList.remove("music-btn--playing");
-      } else {
-        window.birthdayMusic.start();
-        playIcon.hidden = true;
-        pauseIcon.hidden = false;
-        musicLabel.textContent = "To'xtatish";
-        musicBtn.classList.add("music-btn--playing");
-      }
-    });
-  </script>
+    <script src="music.js"></script>
 </body>
 </html>
